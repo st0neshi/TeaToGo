@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --box-shadow: 0, 0.5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    user-select: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #EB92BE;
+    /* padding: 2rem; */
+    z-index: 100;
+    /* box-shadow: var(--box-shadow); */
+
+    -webkit-animation: shadow-drop-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+header .logo-content{
+    padding: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+header .logo-content .logo{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo-content .logo i{
+    color: #FFEF78;
+    font-size: 3.5rem;
+}
+
+header .logo-content .logo i:hover{
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+header .navi-content{
+    background-color: #FFEF78;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navi-content .navi a{
+    font-size: 1.8rem;
+    border-radius: 5px;
+    padding: .5rem 1.5rem;
+    color: #EB92BE;
+}
+
+header .navi-content .navi a.active, header .navi-content .navi a:hover{
+    color: #FFEF78;
+    background-color: #EB92BE;
+}
+
+header .navi-content .sub-navi i{
+    /* font-size: 1.8rem;
+    padding: .5rem 1rem;
+    color: #EB92BE; */
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    width: 4.5rem;
+    font-size: 1.8rem;
+    color: #EB92BE;
+    border-radius: 50%;
+}
+
+header .navi-content .sub-navi i:hover{
+    color: #FFEF78;
+    background-color: #EB92BE;
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+header .navi-content .sub-navi #bars-icon{
+    display: none;
+}
+
+
+/* media */
+@media (max-width: 555px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 487px){
+    header .navi-content .sub-navi #bars-icon{
+        display: inline-block;
+    }
+
+    header .logo-content{
+        text-align: center;
+    }
+
+    header .navi-content .nvai{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+    }
+
+    header .navi-content .navi a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background-color: #FFEF78;
+    }
+}

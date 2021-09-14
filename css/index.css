@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .3);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    user-select: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #FF75A0;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo-content{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #FCE38A;
+}
+
+.header .logo-content i{
+    font-size: 3.5rem;
+}
+
+.header .navi a{
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    color: #FCE38A;
+}
+
+.header .navi a.active, .header .navi a:hover{
+    background: #FCE38A;
+    color: #FF75A0;
+}
+
+/* sub navi */
+.header .sub-navi i, .header .sub-navi a{
+    cursor: pointer;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 3.5rem;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    color: #FCE38A;
+    border-radius: 50%;
+}
+
+.header .sub-navi i:hover, .header .sub-navi a:hover{
+    color: #FF75A0;
+    background-color: #FCE38A;
+    transform: rotate(360deg);
+    transition: 0.8s;
+}
+
+/* bars */
+.header .sub-navi #bars-icon{
+    display: none;
+}
+
+/* media */
+@media (max-width: 800px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 666px) {
+    .header .sub-navi #bars-icon{
+        display: inline-block;
+    }
+
+    .header .navi{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #FF75A0;
+        border-top: 0.1rem solid rgba(0, 0, 0, .2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .navi.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navi a{
+        display: block;
+        margin: 1rem;
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    html{
+        font-size: 50%;
+    }
+
+}
