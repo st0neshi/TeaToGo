@@ -330,7 +330,7 @@ section:nth-child(even) {
 }
 
 .menu .box-container .box img {
-    margin: 1rem -1rem;
+    margin: 1rem -2rem;
 }
 
 .menu .box-container .box h3 {
@@ -527,7 +527,7 @@ section:nth-child(even) {
 /* footer content */
 .footer .box-container{
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 400px 450px 400px;
     gap: 1.5rem;
 }
 
