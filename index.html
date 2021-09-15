@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/font_awesome/css/all.css"/>
     <link rel="stylesheet" href="css/animi.css"/>
+
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
@@ -30,19 +32,20 @@
         </nav>
 
         <div class="sub-navi">
-            <i class="fas fa-bars" id="bars-icon"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart" id="like-icon"></a>
+            <i class="fas fa-bars" id="bars-button"></i>
+            <i class="fas fa-search" id="search-button"></i>
+            <a href="#" class="fas fa-heart" id="like-button"></a>
         </div>
     </div>
 
     <!-- search -->
-    <form action="" id="search-pop">
-        <input type="search" id="search-box">
+    <form action="" id="search-content">
+        <input type="search" id="search-box" placeholder="Click Here To Search">
         <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close-button"></i>
     </form>
 
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
 </body>
 
 </html>
