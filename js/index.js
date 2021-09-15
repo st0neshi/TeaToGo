@@ -90,3 +90,14 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+// loader
+function loader(){
+    document.querySelector('.loader-content').classList.add('fade-out');
+}
+
+function fadeOut(){
+    setInterval(loader, 3500);
+}
+
+window.onload = fadeOut;
