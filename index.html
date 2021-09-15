@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/font_awesome/css/all.css" />
     <link rel="stylesheet" href="css/animi.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script defer src="js/index.js"></script>
     <!-- <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 </head>
@@ -31,6 +33,7 @@
             <a href="#about">About</a>
             <a href="#review">Reviews</a>
             <a href="#contact">Contact</a>
+            <a href="#more">More</a>
         </nav>
 
         <div class="sub-navi">
@@ -541,6 +544,95 @@
         </form>
     </section>
 
+    <!-- more -->
+    <section class="more" id="more">
+        <h3 class="sub-heading">More</h3>
+        <h1 class="heading">Brand History</h1>
+
+        <!-- <div class="info-content">
+            <div class="info">
+                <img src="img/more/1.jpg" alt="">
+                <div class="info-text">
+                    <div class="text-block">
+                        <h1>About Our History</h1>
+                        <p>after i graduated from the university, i started this project. i really like to build a 
+                            goodlooking website, because for a product, the appearance is the most important part
+                            of it. it will catch the customer's attention. a clean and attrative appearance makes the
+                            negotiation easier to argue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row" data-aos="fade-right">
+            <div class="img">
+                <img src="img/more/4.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>About me</h3>
+                <p>i really like to build a goodlooking website. when i am building a website, i feel like i am playing
+                    a game. i forget the time, even forget to eat. for me, completing the task is like winning a game.
+                    So I think if your job is exactly where you are interested, then it is really a blessing in your life.
+                </p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 5rem;" data-aos="fade-left">
+            <div class="content">
+                <h3>About the project</h3>
+                <p>
+                    after i have graduated from the university on june 7th, 2021, i started this project. personally, i like to drink Bubble
+                    tea, that is the main reason i build this website. the website is for investors(of course no, it
+                    is for the interview lol). if they are interested in Tea-To-Go, then they will invest it, and i can
+                    make money xD. 
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="img/more/2.png" alt="">
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 5rem;" data-aos="fade-right">
+            <div class="img">
+                <img src="img/more/3.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>my ideas</h3>
+                <p>as a product, the appearance is the most important part of it. it will catch the customer's 
+                    attention. a clean and attrative appearance makes the negotiation easier to argue. I used 4 colors
+                    as the main theme, they are #FF75A0, #FCE38A, #EAFFD0 and #95E1D3. i believe these 4 colors will
+                    tell the investors this is summer holiday, and it is the time to eat sweet stuffs.
+                </p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 5rem;" data-aos="fade-left">
+            <div class="content">
+                <h3>Details</h3>
+                <p>
+                    <span>header navi</span> with toggle menu bar effect <i class="fas fa-check"></i><br />
+                    <span>home</span> section with touch slider using swiper.js <i class="fas fa-check"></i><br />
+                    <span>menu</span> section using grid like boxes <i class="fas fa-check"></i><br/>
+                    <span>about</span> section using flexbox <i class="fas fa-check"></i><br/>
+                    <span>review</span> section with touch slider using swiper.js <i class="fas fa-check"></i><br/>
+                    <span>contact</span> section using form element <i class="fas fa-check"></i><br/>
+                    <span>more</span> section with auto fly in using gride and aos.js <i class="fas fa-check"></i>
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="img/more/5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- footer -->
     <section class="footer">
         <div class="box-container">
@@ -554,26 +646,40 @@
 
             <div class="box">
                 <h3>Navigations</h3>
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">Reviews</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Reviews</a>
+                <a href="#contact">Contact</a>
             </div>
 
             <div class="box">
                 <h3>My Info</h3>
                 <a href="#">Hongwei Shi</a>
-                <a href="#">imericshi@gmail.com</a>
+                <a href="#">imericshi@gmail</a>
                 <a href="#">613-858-4608</a>
                 <a href="#">517 Pinawa Cir</a>
                 <a href="#">Ottawa, ON</a>
                 <a href="#">K2J 5Y2</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Me</h3>
+                <a href="https://github.com/st0neshi">GitHub</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
             </div>
         </div>
     </section>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- <script src="js/index.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>

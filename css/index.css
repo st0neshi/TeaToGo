@@ -26,6 +26,14 @@ html {
     background: #EAFFD0;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #95E1D3;
+}
+
 .btn {
     margin-top: 1rem;
     cursor: pointer;
@@ -202,13 +210,7 @@ html {
 }
 
 /* gallery content */
-section {
-    padding: 2rem 9%;
-}
 
-section:nth-child(even) {
-    background: #95E1D3;
-}
 
 /* .home .gallery .wrapper{
     height: 1000px;
@@ -524,10 +526,59 @@ section:nth-child(even) {
     margin-top: 0;
 }
 
+/* more content */
+.more .info{
+    background: #FF75A0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.more .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.more .row span{
+    color: #FF75A0;
+}
+
+.more .row .img{
+    flex: 1 1 45rem;
+}
+
+.more .row .img img{
+    width: 100%;
+}
+
+.more .row .content{
+    flex: 1 1 45rem;
+}
+
+.more .row .content h3{
+    color: #EAFFD0;
+    font-size: 3rem;
+    padding: .5rem 0;
+}
+
+.more .row .content p{
+    color: #EAFFD0;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+    text-align: justify;
+}
+
+
+
 /* footer content */
 .footer .box-container{
     display: grid;
-    grid-template-columns: 400px 450px 400px;
+    grid-template-columns: 25% 25% 25% 25%; /* repeat(auto-fit, minmax(25rem, 1fr)) */
     gap: 1.5rem;
 }
 
@@ -552,7 +603,7 @@ section:nth-child(even) {
 
 
 /* media */
-@media (max-width: 800px) {
+@media (max-width: 870px) {
     html {
         font-size: 55%;
     }
@@ -566,7 +617,7 @@ section:nth-child(even) {
     }
 }
 
-@media (max-width: 666px) {
+@media (max-width: 750px) {
     .header .sub-navi #bars-button {
         display: inline-block;
     }
@@ -612,9 +663,13 @@ section:nth-child(even) {
     .home .gallery .wrapper .slide .ad h3 {
         font-size: 5rem;
     }
+
+    .footer .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     html {
         font-size: 50%;
     }
