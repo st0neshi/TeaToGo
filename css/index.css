@@ -429,7 +429,8 @@ section:nth-child(even) {
     border-radius: 0.5rem;
     position: relative;
     background: #EAFFD0;
-    /* height: 300px; */
+    height: 300px;
+    overflow: hidden;
 }
 
 .review .slide .fa-quote-right{
@@ -469,6 +470,7 @@ section:nth-child(even) {
     font-size: 1.5rem;
     line-height: 1.8;
     color:  #95E1D3;
+    /* text-align: justify; */
 }
 
 /* contact content */
@@ -596,7 +598,7 @@ section:nth-child(even) {
 }
 
 .footer .box-container .box a:hover{
-    color: #EAFFD0;
+    color: #95E1D3;
     text-decoration: underline;
 }
 
